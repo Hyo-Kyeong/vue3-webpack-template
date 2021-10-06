@@ -26,8 +26,17 @@
   <!-- 컴포넌트 속성 상속 -->
   <ComponentInheritance />
   <br /><br />
+  <!-- 컴포넌트 Emit -->
   <ComponentEmit />
   <br /><br />
+  <!-- 컴포넌트 Slot -->
+  <ComponentSlot />
+  <br /><br />
+  <!-- 컴포넌트 Provide, Inject -->
+  <ComponentProvide />
+  <br /><br />
+  <!-- 컴포넌트 Refs -->
+  <ComponentRefs />
 </template>
 
 <script>
@@ -42,7 +51,9 @@ import FormInputBinding from '~/components/FormInputBinding'
 import ComponentFoundation from '~/components/ComponentFoundation'
 import ComponentInheritance from '~/components/ComponentInheritance'
 import ComponentEmit from '~/components/ComponentEmit'
-
+import ComponentSlot from '~/components/ComponentSlot'
+import ComponentProvide from '~/components/ComponentProvide'
+import ComponentRefs from '~/components/ComponentRefs'
 export default {
     components: {
       ClassBinding,
@@ -54,7 +65,10 @@ export default {
       FormInputBinding,
       ComponentFoundation,
       ComponentInheritance,
-      ComponentEmit
+      ComponentEmit,
+      ComponentSlot,
+      ComponentProvide,
+      ComponentRefs
     },
     
 }

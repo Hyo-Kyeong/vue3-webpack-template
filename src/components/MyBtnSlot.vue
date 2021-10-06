@@ -1,30 +1,12 @@
 <template>
   <div
-    :class="{ large }"
-    :style="{ backgroundColor: color }"
     class="btn">
-    <slot></slot>
+    <!-- Fallback(대체) contents -->
+    <slot name="icon"></slot>
+    <slot name="text"></slot>
   </div>
 </template>
 
-<script>
-export default {
-    props: {
-        color: {
-            type: String,
-            default: 'gray'
-        },
-        large: {
-            type: Boolean,
-            default: false
-        },
-        text: {
-            type: String,
-            default: 'Apple'
-        }
-    }
-}
-</script>
 <style scoped lang="scss">
     .btn {
         display: inline-block;

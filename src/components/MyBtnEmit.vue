@@ -5,6 +5,18 @@
     class="btn">
     <slot></slot>
   </div>
+  <h1 @click="$emit('click')">
+    Emit click
+  </h1>
+  <h1 @click="$emit('heropy')">
+    Emit heropy
+  </h1>
+  <h1 @dblclick="$emit('heropy', $event)">
+    double Emit heropy
+  </h1>
+  <input
+    type="text"
+    v-model="msg" />
 </template>
 
 <script>
@@ -21,6 +33,22 @@ export default {
         text: {
             type: String,
             default: 'Apple'
+        }
+    },
+    data() {
+        return {
+            msg: ''
+        }
+    },
+    //inheritAttrs: false,
+    emits: [
+        'click',
+        'heropy',
+        'changeMsg'
+    ],
+    watch: {
+        msg() {
+            this.$emit('changeMsg', this.msg)
         }
     }
 }
@@ -40,3 +68,4 @@ export default {
         }
     }
 </style>
+

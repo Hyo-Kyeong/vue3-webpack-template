@@ -1,19 +1,19 @@
 <template>
   <!-- 컴포넌트 속성 상속 -->
   <!-- 최상위 요소에 class상속 - 최상위 요소가 2개 이상일 경우 상속X -->
-  <MyBtn
+  <MyBtnInherit
     class="heropy"
     sytle="color: red;"
     title="hello world">
     Inherit
-  </MyBtn>
+  </MyBtnInherit>
 </template>
 
 <script>
-import MyBtn from '~/components/MyBtn'
+import MyBtnInherit from '~/components/MyBtnInherit'
 export default {
     components: {
-        MyBtn
+        MyBtnInherit
     },
 }
 </script>

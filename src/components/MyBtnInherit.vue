@@ -5,6 +5,14 @@
     class="btn">
     <slot></slot>
   </div>
+  <h1
+    :class="$attrs.class"
+    :style="$attrs.style">
+    h1 attrs
+  </h1>
+  <h1 v-bind="$attrs">
+    h1 bind
+  </h1>
 </template>
 
 <script>
@@ -22,7 +30,11 @@ export default {
             type: String,
             default: 'Apple'
         }
-    }
+    },
+    //inheritAttrs: false,
+    created() {
+        console.log(this.$attrs)
+    },
 }
 </script>
 <style scoped lang="scss">

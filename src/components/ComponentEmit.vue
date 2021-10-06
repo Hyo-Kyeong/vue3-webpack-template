@@ -1,19 +1,21 @@
 <template>
-  <MyBtn
+  <MyBtnEmit
     @click="log"
     @change-msg="logMsg">
     Emit
-  </MyBtn>
-  <MyBtn @heropy="log">
+  </MyBtnEmit>
+  <br /><br />
+  <h1>heroypy</h1>
+  <MyBtnEmit @heropy="log">
     Emit
-  </MyBtn>
+  </MyBtnEmit>
 </template>
 
 <script>
-import MyBtn from '~/components/MyBtn'
+import MyBtnEmit from '~/components/MyBtnEmit'
 export default {
     components: {
-        MyBtn
+        MyBtnEmit
     },
     methods: {
         log() {
