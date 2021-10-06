@@ -23,6 +23,11 @@
   <!-- 컴포넌트 기초 -->
   <ComponentFoundation />
   <br /><br />
+  <!-- 컴포넌트 속성 상속 -->
+  <ComponentInheritance />
+  <br /><br />
+  <ComponentEmit />
+  <br /><br />
 </template>
 
 <script>
@@ -35,6 +40,8 @@ import EventModifier from '~/components/EventModifier'
 import KeyModifier from '~/components/KeyModifier'
 import FormInputBinding from '~/components/FormInputBinding'
 import ComponentFoundation from '~/components/ComponentFoundation'
+import ComponentInheritance from '~/components/ComponentInheritance'
+import ComponentEmit from '~/components/ComponentEmit'
 
 export default {
     components: {
@@ -45,7 +52,9 @@ export default {
       EventModifier,
       KeyModifier,
       FormInputBinding,
-      ComponentFoundation
+      ComponentFoundation,
+      ComponentInheritance,
+      ComponentEmit
     },
     
 }
